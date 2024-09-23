@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>TruecoTrove - Venta de Cosas Usadas</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>TruecoTrove</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Inicio</a></li>
+                <li><a href="#" id="signup-link">Registrarse</a></li>
+                <li><a href="#" id="login-link">Iniciar Sesión</a></li>
+                <li><a href="#" id="add-product-link" class="hidden">Agregar Producto</a></li>
+                <li><a href="#" id="catalog-link">Catálogo</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div id="home" class="form-container">
+                <h2>Bienvenido a TruecoTrove</h2>
+                <p>Aquí puedes comprar y vender artículos usados de manera fácil y segura.</p>
+            </div>
+
+            <div id="signup" class="form-container hidden">
+                <h2>Registrarse</h2>
+                <form id="signup-form">
+                    <input type="text" id="signup-name" placeholder="Nombre" required>
+                    <input type="email" id="signup-email" placeholder="Correo Electrónico" required>
+                    <input type="password" id="signup-password" placeholder="Contraseña" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+
+            <div id="login" class="form-container hidden">
+                <h2>Iniciar Sesión</h2>
+                <form id="login-form">
+                    <input type="email" id="login-email" placeholder="Correo Electrónico" required>
+                    <input type="password" id="login-password" placeholder="Contraseña" required>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+
+            <div id="add-product" class="form-container hidden">
+                <h2>Agregar Producto</h2>
+                <form id="add-product-form">
+                    <input type="text" id="product-name" placeholder="Nombre del Producto" required>
+                    <textarea id="product-description" placeholder="Descripción del Producto" required></textarea>
+                    <input type="number" id="product-price" placeholder="Precio" required>
+                    <input type="file" id="product-image" accept="image/*" required>
+                    <button type="submit">Agregar Producto</button>
+                </form>
+            </div>
+
+            <div id="catalog" class="hidden">
+                <h2>Catálogo de Productos</h2>
+                <div id="product-grid" class="product-grid">
+                    <!-- Products will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/app.js"></script>
+    </body>
+</html>
